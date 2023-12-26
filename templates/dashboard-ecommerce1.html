@@ -1,0 +1,952 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Datta Able Free Bootstrap 4 Admin Template</title>
+    <!-- HTML5 Shim and Respond.js IE10 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 10]>
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="Datta Able Bootstrap admin template made using Bootstrap 4 and it has huge amount of ready made feature, UI components, pages which completely fulfills any dashboard needs." />
+    <meta name="keywords" content="admin templates, bootstrap admin templates, bootstrap 4, dashboard, dashboard templets, sass admin templets, html admin templates, responsive, bootstrap admin templates free download,premium bootstrap admin templates, datta able, datta able bootstrap admin template, free admin theme, free dashboard template"/>
+    <meta name="author" content="pinesphere"/>
+
+    <!-- Favicon icon -->
+    <link rel="icon" href="{% static 'assets2/images/favicon.ico' %}" type="image/x-icon">
+    <!-- fontawesome icon -->
+    <link rel="stylesheet" href="{% static 'assets2/fonts/fontawesome/css/fontawesome-all.min.css' %}">
+    <!-- animation css -->
+    <link rel="stylesheet" href="{% static 'assets2/plugins/animation/css/animate.min.css' %}">
+    <!-- vendor css -->
+    <link rel="stylesheet" href="{% static 'assets2/css/style.css' %}">
+<style>
+    body.layout-6 .navbar-brand, body.layout-6 .pcoded-header.header-blue, body.layout-6 .pcoded-navbar, body.layout-6 .pcoded-navbar.menu-light, body.layout-6 .pcoded-navbar.menu-light .header-logo {
+        background: transparent;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+    .pcoded-navbar.menupos-static {
+        position: absolute;
+        height: 100%;
+        min-height: 100%;
+    }
+    .pcoded-navbar.menu-light {
+        background-color: #fff;
+        color: #3f4d67;
+        -webkit-box-shadow: 7px 0 15px 0 rgba(69, 90, 100, 0.09);
+        box-shadow: 7px 0 15px 0 rgba(69, 90, 100, 0.09);
+    }
+    @media only screen and (max-width: 991px){
+    .pcoded-navbar {
+        margin-left: -264px;
+        position: absolute;
+        height: 100%;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+}
+    .pcoded-navbar {
+        display: block;
+        z-index: 1029;
+        position: fixed;
+        -webkit-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        -webkit-box-shadow: 1px 0 20px 0 #3f4d67;
+        box-shadow: 1px 0 20px 0 #3f4d67;
+        width: 264px;
+        height: 100vh;
+        top: 0;
+        background: #3f4d67;
+        color: #a9b7d0;
+    }
+</style>
+</head>
+
+<body class="layout-6" style="background-image: url('../assets/images/bg-images/bg1.jpg'); background-size: cover;">
+
+    <div class="loader-bg">
+        <div class="loader-track">
+        <div class="loader-fill"></div>
+        </div>
+        </div>
+        
+        
+        <nav class="pcoded-navbar menu-light brand-lightblue menupos-static">
+        <div class="navbar-wrapper">
+        <div class="navbar-brand header-logo">
+        <a href="index.html" class="b-brand">
+        <span class="b-title"><a href="{% url 'index' %}"><img src="{% static 'assets/images/logo_white4.png' %}" style="width: 100%;" alt></a></span>
+        </a>
+        <a class="mobile-menu" id="mobile-collapse" href="#!"><span></span></a>
+        </div>
+        <div class="navbar-content scroll-div">
+        <ul class="nav pcoded-inner-navbar">
+        <li class="nav-item pcoded-menu-caption">
+        <label>Navigation</label>
+        </li>
+        <li data-username="dashboard Default Ecommerce CRM Analytics Crypto Project" class="nav-item pcoded-hasmenu active pcoded-trigger">
+        <a href="#!" class="nav-link"><span class="pcoded-micon"><i class="feather icon-home"></i></span><span class="pcoded-mtext">Dashboard</span></a>
+        <ul class="pcoded-submenu">
+        <li class><a href="index.html" class>Default</a></li>
+        <li class="active"><a href="dashboard-ecommerce.html" class>Ecommerce</a></li>
+        <li class><a href="dashboard-crm.html" class>CRM</a></li>
+        <li class><a href="dashboard-analytics.html" class>Analytics</a></li>
+        <li class><a href="dashboard-crypto.html" class>Crypto<span class="pcoded-badge label label-danger">NEW</span></a></li>
+        <li class><a href="dashboard-project.html" class>Project</a></li>
+        </ul>
+        </li>
+        <li data-username="Vertical Horizontal Box Layout RTL fixed static collapse menu color icon dark" class="nav-item pcoded-hasmenu">
+        <a href="#!" class="nav-link"><span class="pcoded-micon"><i class="feather icon-layout"></i></span><span class="pcoded-mtext">Page layouts</span></a>
+        <ul class="pcoded-submenu">
+        <li class="pcoded-hasmenu"><a href="#!" class>Vertical</a>
+        <ul class="pcoded-submenu">
+        <li class><a href="layout-static.html" class target="_blank">Static</a></li>
+        <li class><a href="layout-fixed.html" class target="_blank">Fixed</a></li>
+        <li class><a href="layout-menu-fixed.html" class target="_blank">Navbar fixed</a></li>
+        <li class><a href="layout-mini-menu.html" class target="_blank">Collapse menu</a></li>
+        </ul>
+        </li>
+        <li class><a href="layout-horizontal.html" class target="_blank">Horizontal</a></li>
+        <li class><a href="layout-box.html" class target="_blank">Box layout</a></li>
+        <li class><a href="layout-rtl.html" class target="_blank">RTL</a></li>
+        <li class><a href="layout-light.html" class target="_blank">Light layout</a></li>
+        <li class><a href="layout-dark.html" class target="_blank">Dark layout <span class="pcoded-badge label label-danger">Hot</span></a></li>
+        <li class><a href="layout-menu-icon.html" class target="_blank">Color icon</a></li>
+        </ul>
+        </li>
+        <li data-username="widget Statistic Data Table User card Chart" class="nav-item pcoded-hasmenu">
+        <a href="#!" class="nav-link"><span class="pcoded-micon"><i class="feather icon-layers"></i></span><span class="pcoded-mtext">Widget</span><span class="pcoded-badge label label-info">100+</span></a>
+        <ul class="pcoded-submenu">
+        <li class><a href="widget-statistic.html" class>Statistic</a></li>
+        <li class><a href="widget-data.html" class>Data</a></li>
+        <li class><a href="widget-table.html" class>Table</a></li>
+        <li class><a href="widget-user-card.html" class>User</a></li>
+        <li class><a href="widget-chart.html" class>Chart</a></li>
+        </ul>
+        </li>
+        </ul>
+        </div>
+        </div>
+        </nav>
+        
+        
+        <header class="navbar pcoded-header navbar-expand-lg navbar-light">
+        <div class="m-header">
+        <a class="mobile-menu" id="mobile-collapse1" href="#!"><span></span></a>
+        <a href="index.html" class="b-brand">
+            <span class="b-title"><a href="{% url 'index' %}"><img src="{% static 'assets/images/logo_white4.png' %}" style="width: 50%;" alt></a></span>
+        </a>
+        </div>
+        <a class="mobile-menu" id="mobile-header" href="#!">
+        <i class="feather icon-more-horizontal"></i>
+        </a>
+        <div class="collapse navbar-collapse">
+        <ul class="navbar-nav mr-auto">
+        <li><a href="#!" class="full-screen" onclick="if (!window.__cfRLUnblockHandlers) return false; javascript:toggleFullScreen()" data-cf-modified-48b6984239b6c6478e15978b-><i class="feather icon-maximize"></i></a></li>
+        <li class="nav-item dropdown">
+        <a class="dropdown-toggle" href="#" data-toggle="dropdown">Dropdown</a>
+        <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#!">Action</a></li>
+        <li><a class="dropdown-item" href="#!">Another action</a></li>
+        <li><a class="dropdown-item" href="#!">Something else here</a></li>
+        </ul>
+        </li>
+        <li class="nav-item">
+        <div class="main-search">
+        <div class="input-group">
+        <input type="text" id="m-search" class="form-control" placeholder="Search . . .">
+        <a href="#!" class="input-group-append search-close">
+        <i class="feather icon-x input-group-text"></i>
+        </a>
+        <span class="input-group-append search-btn btn btn-primary">
+        <i class="feather icon-search input-group-text"></i>
+        </span>
+        </div>
+        </div>
+        </li>
+        </ul>
+        <ul class="navbar-nav ml-auto">
+        <li>
+        <div class="dropdown">
+        <a class="dropdown-toggle" href="#" data-toggle="dropdown"><i class="icon feather icon-bell"></i></a>
+        <div class="dropdown-menu dropdown-menu-right notification">
+        <div class="noti-head">
+        <h6 class="d-inline-block m-b-0">Notifications</h6>
+        <div class="float-right">
+        <a href="#!" class="m-r-10">mark as read</a>
+        <a href="#!">clear all</a>
+        </div>
+        </div>
+        <ul class="noti-body">
+        <li class="n-title">
+        <p class="m-b-0">NEW</p>
+        </li>
+        <li class="notification">
+        <div class="media">
+        <img class="img-radius" src="../assets/images/user/avatar-1.jpg" alt="Generic placeholder image">
+        <div class="media-body">
+        <p><strong>John Doe</strong><span class="n-time text-muted"><i class="icon feather icon-clock m-r-10"></i>30 min</span></p>
+        <p>New ticket Added</p>
+        </div>
+        </div>
+        </li>
+        <li class="n-title">
+        <p class="m-b-0">EARLIER</p>
+        </li>
+        <li class="notification">
+        <div class="media">
+        <img class="img-radius" src="../assets/images/user/avatar-2.jpg" alt="Generic placeholder image">
+        <div class="media-body">
+        <p><strong>Joseph William</strong><span class="n-time text-muted"><i class="icon feather icon-clock m-r-10"></i>30 min</span></p>
+        <p>Prchace New Theme and make payment</p>
+        </div>
+        </div>
+        </li>
+        <li class="notification">
+        <div class="media">
+        <img class="img-radius" src="../assets/images/user/avatar-3.jpg" alt="Generic placeholder image">
+        <div class="media-body">
+        <p><strong>Sara Soudein</strong><span class="n-time text-muted"><i class="icon feather icon-clock m-r-10"></i>30 min</span></p>
+        <p>currently login</p>
+        </div>
+        </div>
+        </li>
+        </ul>
+        <div class="noti-footer">
+        <a href="#!">show all</a>
+        </div>
+        </div>
+        </div>
+        </li>
+        <li><a href="#!" class="displayChatbox"><i class="icon feather icon-mail"></i></a></li>
+        <li>
+        <div class="dropdown drp-user">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+        <i class="icon feather icon-settings"></i>
+        </a>
+        <div class="dropdown-menu dropdown-menu-right profile-notification">
+        <div class="pro-head">
+        <img src="../assets/images/user/avatar-1.jpg" class="img-radius" alt="User-Profile-Image">
+        <span>John Doe</span><i class="fa-solid fa-shield-halved"></i>
+        
+        <a href="auth-signin.html" class="dud-logout" title="Logout">
+        <i class="feather icon-log-out"></i>
+        </a>
+        </div>
+        <ul class="pro-body">
+        <li><a href="#!" class="dropdown-item"><i class="feather icon-settings"></i> Settings</a></li>
+        <li><a href="#!" class="dropdown-item"><i class="feather icon-user"></i> Profile</a></li>
+        <li><a href="message.html" class="dropdown-item"><i class="feather icon-mail"></i> My Messages</a></li>
+        <li><a href="auth-signin.html" class="dropdown-item"><i class="feather icon-lock"></i> Lock Screen</a></li>
+        </ul>
+        </div>
+        </div>
+        </li>
+        </ul>
+        </div>
+        </header>
+        
+        
+        <section class="header-user-list">
+        <div class="h-list-header">
+        <div class="input-group">
+        <input type="text" id="search-friends" class="form-control" placeholder="Search Friend . . .">
+        </div>
+        </div>
+        <div class="h-list-body">
+        <a href="#!" class="h-close-text"><i class="feather icon-chevrons-right"></i></a>
+        <div class="main-friend-cont scroll-div">
+        <div class="main-friend-list">
+        <div class="media userlist-box" data-id="1" data-status="online" data-username="Josephin Doe">
+        <a class="media-left" href="#!"><img class="media-object img-radius" src="../assets/images/user/avatar-1.jpg" alt="Generic placeholder image ">
+        <div class="live-status">3</div>
+        </a>
+        <div class="media-body">
+        <h6 class="chat-header">Josephin Doe<small class="d-block text-c-green">Typing . . </small></h6>
+        </div>
+        </div>
+        <div class="media userlist-box" data-id="2" data-status="online" data-username="Lary Doe">
+        <a class="media-left" href="#!"><img class="media-object img-radius" src="../assets/images/user/avatar-2.jpg" alt="Generic placeholder image">
+        <div class="live-status">1</div>
+        </a>
+        <div class="media-body">
+        <h6 class="chat-header">Lary Doe<small class="d-block text-c-green">online</small></h6>
+        </div>
+        </div>
+        <div class="media userlist-box" data-id="3" data-status="online" data-username="Alice">
+        <a class="media-left" href="#!"><img class="media-object img-radius" src="../assets/images/user/avatar-3.jpg" alt="Generic placeholder image"></a>
+        <div class="media-body">
+        <h6 class="chat-header">Alice<small class="d-block text-c-green">online</small></h6>
+        </div>
+        </div>
+        <div class="media userlist-box" data-id="4" data-status="offline" data-username="Alia">
+        <a class="media-left" href="#!"><img class="media-object img-radius" src="../assets/images/user/avatar-1.jpg" alt="Generic placeholder image">
+        <div class="live-status">1</div>
+        </a>
+        <div class="media-body">
+        <h6 class="chat-header">Alia<small class="d-block text-muted">10 min ago</small></h6>
+        </div>
+        </div>
+        <div class="media userlist-box" data-id="5" data-status="offline" data-username="Suzen">
+        <a class="media-left" href="#!"><img class="media-object img-radius" src="../assets/images/user/avatar-4.jpg" alt="Generic placeholder image"></a>
+        <div class="media-body">
+        <h6 class="chat-header">Suzen<small class="d-block text-muted">15 min ago</small></h6>
+        </div>
+        </div>
+        <div class="media userlist-box" data-id="1" data-status="online" data-username="Josephin Doe">
+        <a class="media-left" href="#!"><img class="media-object img-radius" src="../assets/images/user/avatar-1.jpg" alt="Generic placeholder image ">
+        <div class="live-status">3</div>
+        </a>
+        <div class="media-body">
+        <h6 class="chat-header">Josephin Doe<small class="d-block text-c-green">Typing . . </small></h6>
+        </div>
+        </div>
+        <div class="media userlist-box" data-id="2" data-status="online" data-username="Lary Doe">
+        <a class="media-left" href="#!"><img class="media-object img-radius" src="../assets/images/user/avatar-2.jpg" alt="Generic placeholder image">
+        <div class="live-status">1</div>
+        </a>
+        <div class="media-body">
+        <h6 class="chat-header">Lary Doe<small class="d-block text-c-green">online</small></h6>
+        </div>
+        </div>
+        <div class="media userlist-box" data-id="3" data-status="online" data-username="Alice">
+        <a class="media-left" href="#!"><img class="media-object img-radius" src="../assets/images/user/avatar-3.jpg" alt="Generic placeholder image"></a>
+        <div class="media-body">
+        <h6 class="chat-header">Alice<small class="d-block text-c-green">online</small></h6>
+        </div>
+        </div>
+        <div class="media userlist-box" data-id="4" data-status="offline" data-username="Alia">
+        <a class="media-left" href="#!"><img class="media-object img-radius" src="../assets/images/user/avatar-1.jpg" alt="Generic placeholder image">
+        <div class="live-status">1</div>
+        </a>
+        <div class="media-body">
+        <h6 class="chat-header">Alia<small class="d-block text-muted">10 min ago</small></h6>
+        </div>
+        </div>
+        <div class="media userlist-box" data-id="5" data-status="offline" data-username="Suzen">
+        <a class="media-left" href="#!"><img class="media-object img-radius" src="../assets/images/user/avatar-4.jpg" alt="Generic placeholder image"></a>
+        <div class="media-body">
+        <h6 class="chat-header">Suzen<small class="d-block text-muted">15 min ago</small></h6>
+        </div>
+        </div>
+        <div class="media userlist-box" data-id="1" data-status="online" data-username="Josephin Doe">
+        <a class="media-left" href="#!"><img class="media-object img-radius" src="../assets/images/user/avatar-1.jpg" alt="Generic placeholder image ">
+        <div class="live-status">3</div>
+        </a>
+        <div class="media-body">
+        <h6 class="chat-header">Josephin Doe<small class="d-block text-c-green">Typing . . </small></h6>
+        </div>
+        </div>
+        <div class="media userlist-box" data-id="2" data-status="online" data-username="Lary Doe">
+        <a class="media-left" href="#!"><img class="media-object img-radius" src="../assets/images/user/avatar-2.jpg" alt="Generic placeholder image">
+        <div class="live-status">1</div>
+        </a>
+        <div class="media-body">
+        <h6 class="chat-header">Lary Doe<small class="d-block text-c-green">online</small></h6>
+        </div>
+        </div>
+        <div class="media userlist-box" data-id="3" data-status="online" data-username="Alice">
+        <a class="media-left" href="#!"><img class="media-object img-radius" src="../assets/images/user/avatar-3.jpg" alt="Generic placeholder image"></a>
+        <div class="media-body">
+        <h6 class="chat-header">Alice<small class="d-block text-c-green">online</small></h6>
+        </div>
+        </div>
+        <div class="media userlist-box" data-id="4" data-status="offline" data-username="Alia">
+        <a class="media-left" href="#!"><img class="media-object img-radius" src="../assets/images/user/avatar-1.jpg" alt="Generic placeholder image">
+        <div class="live-status">1</div>
+        </a>
+        <div class="media-body">
+        <h6 class="chat-header">Alia<small class="d-block text-muted">10 min ago</small></h6>
+        </div>
+        </div>
+        <div class="media userlist-box" data-id="5" data-status="offline" data-username="Suzen">
+        <a class="media-left" href="#!"><img class="media-object img-radius" src="../assets/images/user/avatar-4.jpg" alt="Generic placeholder image"></a>
+        <div class="media-body">
+        <h6 class="chat-header">Suzen<small class="d-block text-muted">15 min ago</small></h6>
+        </div>
+        </div>
+        <div class="media userlist-box" data-id="1" data-status="online" data-username="Josephin Doe">
+        <a class="media-left" href="#!"><img class="media-object img-radius" src="../assets/images/user/avatar-1.jpg" alt="Generic placeholder image ">
+        <div class="live-status">3</div>
+        </a>
+        <div class="media-body">
+        <h6 class="chat-header">Josephin Doe<small class="d-block text-c-green">Typing . . </small></h6>
+        </div>
+        </div>
+        <div class="media userlist-box" data-id="2" data-status="online" data-username="Lary Doe">
+        <a class="media-left" href="#!"><img class="media-object img-radius" src="../assets/images/user/avatar-2.jpg" alt="Generic placeholder image">
+        <div class="live-status">1</div>
+        </a>
+        <div class="media-body">
+        <h6 class="chat-header">Lary Doe<small class="d-block text-c-green">online</small></h6>
+        </div>
+        </div>
+        <div class="media userlist-box" data-id="3" data-status="online" data-username="Alice">
+        <a class="media-left" href="#!"><img class="media-object img-radius" src="../assets/images/user/avatar-3.jpg" alt="Generic placeholder image"></a>
+        <div class="media-body">
+        <h6 class="chat-header">Alice<small class="d-block text-c-green">online</small></h6>
+        </div>
+        </div>
+        <div class="media userlist-box" data-id="4" data-status="offline" data-username="Alia">
+        <a class="media-left" href="#!"><img class="media-object img-radius" src="../assets/images/user/avatar-1.jpg" alt="Generic placeholder image">
+        <div class="live-status">1</div>
+        </a>
+        <div class="media-body">
+        <h6 class="chat-header">Alia<small class="d-block text-muted">10 min ago</small></h6>
+        </div>
+        </div>
+        <div class="media userlist-box" data-id="5" data-status="offline" data-username="Suzen">
+        <a class="media-left" href="#!"><img class="media-object img-radius" src="../assets/images/user/avatar-4.jpg" alt="Generic placeholder image"></a>
+        <div class="media-body">
+        <h6 class="chat-header">Suzen<small class="d-block text-muted">15 min ago</small></h6>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        </section>
+        
+        
+        <section class="header-chat">
+        <div class="h-list-header">
+        <h6>Josephin Doe</h6>
+        <a href="#!" class="h-back-user-list"><i class="feather icon-chevron-left"></i></a>
+        </div>
+        <div class="h-list-body">
+        <div class="main-chat-cont scroll-div">
+        <div class="main-friend-chat">
+        <div class="media chat-messages">
+        <a class="media-left photo-table" href="#!"><img class="media-object img-radius img-radius m-t-5" src="../assets/images/user/avatar-2.jpg" alt="Generic placeholder image"></a>
+        <div class="media-body chat-menu-content">
+        <div class>
+        <p class="chat-cont">hello Datta! Will you tell me something</p>
+        <p class="chat-cont">about yourself?</p>
+        </div>
+        <p class="chat-time">8:20 a.m.</p>
+        </div>
+        </div>
+        <div class="media chat-messages">
+        <div class="media-body chat-menu-reply">
+        <div class>
+        <p class="chat-cont">Ohh! very nice</p>
+        </div>
+        <p class="chat-time">8:22 a.m.</p>
+        </div>
+        </div>
+        <div class="media chat-messages">
+        <a class="media-left photo-table" href="#!"><img class="media-object img-radius img-radius m-t-5" src="../assets/images/user/avatar-2.jpg" alt="Generic placeholder image"></a>
+        <div class="media-body chat-menu-content">
+        <div class>
+        <p class="chat-cont">can you help me?</p>
+        </div>
+        <p class="chat-time">8:20 a.m.</p>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        <div class="h-list-footer">
+        <div class="input-group">
+        <input type="file" class="chat-attach" style="display:none">
+        <a href="#!" class="input-group-prepend btn btn-success btn-attach">
+        <i class="feather icon-paperclip"></i>
+        </a>
+        <input type="text" name="h-chat-text" class="form-control h-send-chat" placeholder="Write hear . . ">
+        <button type="submit" class="input-group-append btn-send btn btn-primary">
+        <i class="feather icon-message-circle"></i>
+        </button>
+        </div>
+        </div>
+        </section>
+        
+        
+        <div class="pcoded-main-container">
+        <div class="pcoded-wrapper">
+        <div class="pcoded-content">
+        <div class="pcoded-inner-content">
+        
+        <div class="page-header">
+        <div class="page-block">
+        <div class="row align-items-center">
+        <div class="col-md-12">
+        <div class="page-header-title">
+        <h5 class="m-b-10">Dashboard</h5>
+        </div>
+        <ul class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html"><i class="feather icon-home"></i></a></li>
+        <li class="breadcrumb-item"><a href="#!">Dashboard Ecommerce</a></li>
+        </ul>
+        </div>
+        </div>
+        </div>
+        </div>
+        
+        <div class="main-body">
+        <div class="page-wrapper">
+        
+        <div class="row">
+        
+        <div class="col-md-6 col-xl-4">
+        <div class="card Online-Order">
+        <div class="card-block">
+        <h5>Online Orders</h5>
+        <h6 class="text-muted d-flex align-items-center justify-content-between m-t-30">Delivery Orders<span class="float-right f-18 text-c-green">237 / 400</span></h6>
+        <div class="progress mt-3">
+        <div class="progress-bar progress-c-theme" role="progressbar" style="width:65%;height:6px;" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        <span class="text-muted mt-2 d-block">37% Done</span>
+        </div>
+        </div>
+        </div>
+        <div class="col-md-6 col-xl-4">
+        <div class="card Online-Order">
+        <div class="card-block">
+        <h5>Pending Orders</h5>
+        <h6 class="text-muted d-flex align-items-center justify-content-between m-t-30">Pending Orders<span class="float-right f-18 text-c-purple">100 / 500</span></h6>
+        <div class="progress mt-3">
+        <div class="progress-bar progress-c-theme2" role="progressbar" style="width:50%;height:6px;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        <span class="text-muted mt-2 d-block">20% Pending</span>
+        </div>
+        </div>
+        </div>
+        <div class="col-md-12 col-xl-4">
+        <div class="card Online-Order">
+        <div class="card-block">
+        <h5>Return Orders</h5>
+        <h6 class="text-muted d-flex align-items-center justify-content-between m-t-30">Return Orders<span class="float-right f-18 text-c-blue">50 / 400</span></h6>
+        <div class="progress mt-3">
+        <div class="progress-bar progress-c-blue" role="progressbar" style="width:40%;height:6px;" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        <span class="text-muted mt-2 d-block">10% Return</span>
+        </div>
+        </div>
+        </div>
+        
+        
+        <div class="col-xl-8 col-md-12">
+        <div class="card">
+        <div class="card-header">
+        <h5>Yearly Summary</h5>
+        <div class="card-header-right">
+        <div class="btn-group card-option">
+        <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <i class="feather icon-more-horizontal"></i>
+        </button>
+        <ul class="list-unstyled card-option dropdown-menu dropdown-menu-right">
+        <li class="dropdown-item full-card"><a href="#!"><span><i class="feather icon-maximize"></i> maximize</span><span style="display:none"><i class="feather icon-minimize"></i> Restore</span></a></li>
+        <li class="dropdown-item minimize-card"><a href="#!"><span><i class="feather icon-minus"></i> collapse</span><span style="display:none"><i class="feather icon-plus"></i> expand</span></a></li>
+        <li class="dropdown-item reload-card"><a href="#!"><i class="feather icon-refresh-cw"></i> reload</a></li>
+        <li class="dropdown-item close-card"><a href="#!"><i class="feather icon-trash"></i> remove</a></li>
+        </ul>
+        </div>
+        </div>
+        </div>
+        <div class="card-block">
+        <div class="row pb-3">
+        <div class="col-md-4 col-6 text-center m-b-10">
+        <h3 class="f-w-300">$2356.4</h3>
+        <span>Invoiced</span>
+        </div>
+        <div class="col-md-4 col-6 text-center m-b-10">
+        <h3 class="f-w-300">$1935.6</h3>
+        <span>Profit</span>
+        </div>
+        <div class="col-md-4 col-12 text-center m-b-10">
+        <h3 class="f-w-300">$468.9</h3>
+        <span>Expenses</span>
+        </div>
+        </div>
+        <div id="bar-chart3" class="bar-chart3" style="height:270px;"></div>
+        </div>
+        </div>
+        </div>
+        
+        
+        <div class="col-md-6 col-xl-4">
+        <div class="card theme-bg earning-date">
+        <div class="card-header borderless">
+        <h5 class="text-white">Earnings</h5>
+        </div>
+        <div class="card-block">
+        <div class="bd-example bd-example-tabs">
+        <div class="tab-content" id="tabContent-pills">
+        <div class="tab-pane fade show active" id="earnings-mon" role="tabpanel" aria-labelledby="pills-earnings-mon">
+        <h2 class="text-white mb-3 f-w-300">359,234<i class="feather icon-arrow-up"></i></h2>
+        <span class="text-white mb-4 d-block">TOTAL EARNINGS</span>
+        </div>
+        <div class="tab-pane fade" id="earnings-tue" role="tabpanel" aria-labelledby="pills-earnings-tue">
+        <h2 class="text-white mb-3 f-w-300">222,586<i class="feather icon-arrow-down"></i></h2>
+        <span class="text-white mb-4 d-block">TOTAL EARNINGS</span>
+        </div>
+        <div class="tab-pane fade" id="earnings-wed" role="tabpanel" aria-labelledby="pills-earnings-wed">
+        <h2 class="text-white mb-3 f-w-300">859,745<i class="feather icon-arrow-up"></i></h2>
+        <span class="text-white mb-4 d-block">TOTAL EARNINGS</span>
+        </div>
+        <div class="tab-pane fade" id="earnings-thu" role="tabpanel" aria-labelledby="pills-earnings-thu">
+        <h2 class="text-white mb-3 f-w-300">785,684<i class="feather icon-arrow-up"></i></h2>
+        <span class="text-white mb-4 d-block">TOTAL EARNINGS</span>
+        </div>
+        <div class="tab-pane fade" id="earnings-fri" role="tabpanel" aria-labelledby="pills-earnings-fri">
+        <h2 class="text-white mb-3 f-w-300">123,486<i class="feather icon-arrow-down"></i></h2>
+        <span class="text-white mb-4 d-block">TOTAL EARNINGS</span>
+        </div>
+        <div class="tab-pane fade" id="earnings-sat" role="tabpanel" aria-labelledby="pills-earnings-sat">
+        <h2 class="text-white mb-3 f-w-300">762,963<i class="feather icon-arrow-up"></i></h2>
+        <span class="text-white mb-4 d-block">TOTAL EARNINGS</span>
+        </div>
+        <div class="tab-pane fade" id="earnings-sun" role="tabpanel" aria-labelledby="pills-earnings-sun">
+        <h2 class="text-white mb-3 f-w-300">984,632<i class="feather icon-arrow-down"></i></h2>
+        <span class="text-white mb-4 d-block">TOTAL EARNINGS</span>
+        </div>
+        </div>
+        <ul class="nav nav-pills align-items-center justify-content-center" id="pills-tab" role="tablist">
+        <li class="nav-item">
+        <a class="nav-link active" id="pills-earnings-mon" data-toggle="pill" href="#earnings-mon" role="tab" aria-controls="earnings-mon" aria-selected="true">Mon</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" id="pills-earnings-tue" data-toggle="pill" href="#earnings-tue" role="tab" aria-controls="earnings-tue" aria-selected="false">Tue</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" id="pills-earnings-wed" data-toggle="pill" href="#earnings-wed" role="tab" aria-controls="earnings-wed" aria-selected="false">Wed</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" id="pills-earnings-thu" data-toggle="pill" href="#earnings-thu" role="tab" aria-controls="earnings-thu" aria-selected="false">Thu</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" id="pills-earnings-fri" data-toggle="pill" href="#earnings-fri" role="tab" aria-controls="earnings-fri" aria-selected="false">Fri</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" id="pills-earnings-sat" data-toggle="pill" href="#earnings-sat" role="tab" aria-controls="earnings-sat" aria-selected="false">Sat</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" id="pills-earnings-sun" data-toggle="pill" href="#earnings-sun" role="tab" aria-controls="earnings-sun" aria-selected="false">Sun</a>
+        </li>
+        </ul>
+        </div>
+        </div>
+        </div>
+        <div class="card theme-bg2">
+        <div class="card-block">
+        <div class="row align-items-center justify-content-center">
+        <div class="col-auto">
+        <img src="../assets/images/widget/shape5.png" alt="activity-user">
+        </div>
+        <div class="col">
+        <h2 class="text-white f-w-300">375</h2>
+        <h5 class="text-white">Sale Product</h5>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        
+        
+        <div class="col-xl-8 col-md-6">
+        <div class="card code-table">
+        <div class="card-header">
+        <h5>Full Width Table</h5>
+        <div class="card-header-right">
+        <div class="btn-group card-option">
+        <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <i class="feather icon-more-horizontal"></i>
+        </button>
+        <ul class="list-unstyled card-option dropdown-menu dropdown-menu-right">
+        <li class="dropdown-item full-card"><a href="#!"><span><i class="feather icon-maximize"></i> maximize</span><span style="display:none"><i class="feather icon-minimize"></i> Restore</span></a></li>
+        <li class="dropdown-item minimize-card"><a href="#!"><span><i class="feather icon-minus"></i> collapse</span><span style="display:none"><i class="feather icon-plus"></i> expand</span></a></li>
+        <li class="dropdown-item reload-card"><a href="#!"><i class="feather icon-refresh-cw"></i> reload</a></li>
+        <li class="dropdown-item close-card"><a href="#!"><i class="feather icon-trash"></i> remove</a></li>
+        </ul>
+        </div>
+        </div>
+        </div>
+        <div class="card-block pb-0">
+        <div class="table-responsive">
+        <table class="table table-hover">
+        <thead>
+        <tr>
+        <th>Id Number</th>
+        <th>Code</th>
+        <th>Date</th>
+        <th>Budget</th>
+        <th>Status</th>
+        <th class="text-right">Ratings</th>
+        </thead>
+        <tbody>
+        <tr>
+        <td>
+        <h6 class="mb-1">#467</h6>
+        </td>
+        <td>
+        <h6 class="mb-1">8765482</h6>
+        </td>
+        <td>
+        <h6 class="m-b-0">Nov 14, 2017</h6>
+        </td>
+        <td>
+        <h6 class="m-b-0">$ 874.23</h6>
+        </td>
+        <td><a href="#!" class="label theme-bg f-12 text-white">Active</a></td>
+        <td class="text-right"><a href="#!"><i class="fa fa-star f-18 text-c-yellow"></i></a>
+        <a href="#!"><i class="fa fa-star f-18 text-c-yellow"></i></a>
+        <a href="#!"><i class="fa fa-star f-18 text-c-yellow"></i></a>
+        <a href="#!"><i class="fa fa-star f-18 text-c-yellow"></i></a>
+        <a href="#!"><i class="fa fa-star f-18 text-black-50"></i></a>
+        </td>
+        </tr>
+        <tr>
+        <td>
+        <h6 class="mb-1">#466</h6>
+        </td>
+        <td>
+        <h6 class="mb-1">2366482</h6>
+        </td>
+        <td>
+        <h6 class="m-b-0">Nov 13, 2017</h6>
+        </td>
+        <td>
+        <h6 class="m-b-0">$ 235.34</h6>
+        </td>
+        <td><a href="#!" class="label theme-bg2 f-12 text-white">Not Active</a></td>
+        <td class="text-right"><a href="#!"><i class="fa fa-star f-18 text-c-yellow"></i></a>
+        <a href="#!"><i class="fa fa-star f-18 text-c-yellow"></i></a>
+        <a href="#!"><i class="fa fa-star f-18 text-c-yellow"></i></a>
+        <a href="#!"><i class="fa fa-star f-18 text-black-50"></i></a>
+        <a href="#!"><i class="fa fa-star f-18 text-black-50"></i></a>
+        </td>
+        </tr>
+        <tr>
+        <td>
+        <h6 class="mb-1">#465</h6>
+        </td>
+        <td>
+        <h6 class="mb-1">8832638</h6>
+        </td>
+        <td>
+        <h6 class="m-b-0">Oct 14, 2017</h6>
+        </td>
+        <td>
+        <h6 class="m-b-0">$ 233.46</h6>
+        </td>
+        <td><a href="#!" class="label theme-bg f-12 text-white">Active</a></td>
+        <td class="text-right"><a href="#!"><i class="fa fa-star f-18 text-c-yellow"></i></a>
+        <a href="#!"><i class="fa fa-star f-18 text-c-yellow"></i></a>
+        <a href="#!"><i class="fa fa-star f-18 text-black-50"></i></a>
+        <a href="#!"><i class="fa fa-star f-18 text-black-50"></i></a>
+        <a href="#!"><i class="fa fa-star f-18 text-black-50"></i></a>
+        </td>
+        </tr>
+        <tr>
+        <td>
+        <h6 class="mb-1">#464</h6>
+        </td>
+        <td>
+        <h6 class="mb-1">9632638</h6>
+        </td>
+        <td>
+        <h6 class="m-b-0">Dec 17, 2017</h6>
+        </td>
+        <td>
+        <h6 class="m-b-0">$ 133.46</h6>
+        </td>
+        <td><a href="#!" class="label theme-bg2 f-12 text-white">Not Active</a></td>
+        <td class="text-right"><a href="#!"><i class="fa fa-star f-18 text-c-yellow"></i></a>
+        <a href="#!"><i class="fa fa-star f-18 text-black-50"></i></a>
+        <a href="#!"><i class="fa fa-star f-18 text-black-50"></i></a>
+        <a href="#!"><i class="fa fa-star f-18 text-black-50"></i></a>
+        <a href="#!"><i class="fa fa-star f-18 text-black-50"></i></a>
+        </td>
+        </tr>
+        <tr>
+        <td>
+        <h6 class="mb-1">#463</h6>
+        </td>
+        <td>
+        <h6 class="mb-1">3332538</h6>
+        </td>
+        <td>
+        <h6 class="m-b-0">July 14, 2017</h6>
+        </td>
+        <td>
+        <h6 class="m-b-0">$ 244.46</h6>
+        </td>
+        <td><a href="#!" class="label theme-bg f-12 text-white">Active</a></td>
+        <td class="text-right"><a href="#!"><i class="fa fa-star f-18 text-c-yellow"></i></a>
+        <a href="#!"><i class="fa fa-star f-18 text-c-yellow"></i></a>
+        <a href="#!"><i class="fa fa-star f-18 text-c-yellow"></i></a>
+        <a href="#!"><i class="fa fa-star f-18 text-black-50"></i></a>
+        <a href="#!"><i class="fa fa-star f-18 text-black-50"></i></a>
+        </td>
+        </tr>
+        </tbody>
+        </table>
+        </div>
+        </div>
+        </div>
+        </div>
+        
+        
+        <div class="col-xl-4 col-md-12">
+        <div class="card">
+        <div class="card-header">
+        <h5>Earnings</h5>
+        <span class="d-block pt-2">Mon 15 - Sun 21</span>
+        <div class="card-header-right">
+        <div class="btn-group card-option">
+        <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <i class="feather icon-more-horizontal"></i>
+        </button>
+        <ul class="list-unstyled card-option dropdown-menu dropdown-menu-right">
+        <li class="dropdown-item full-card"><a href="#!"><span><i class="feather icon-maximize"></i> maximize</span><span style="display:none"><i class="feather icon-minimize"></i> Restore</span></a></li>
+        <li class="dropdown-item minimize-card"><a href="#!"><span><i class="feather icon-minus"></i> collapse</span><span style="display:none"><i class="feather icon-plus"></i> expand</span></a></li>
+        <li class="dropdown-item reload-card"><a href="#!"><i class="feather icon-refresh-cw"></i> reload</a></li>
+        <li class="dropdown-item close-card"><a href="#!"><i class="feather icon-trash"></i> remove</a></li>
+        </ul>
+        </div>
+        </div>
+        </div>
+        <div class="card-block">
+        <div class="earning-price mb-1">
+        <h3 class="m-0 f-w-300">$894.39</h3>
+        </div>
+        <div id="Widget-line-chart1" class="WidgetlineChart " style="height:245px;"></div>
+        </div>
+        </div>
+        </div>
+        
+        </div>
+        
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        
+        
+        
+    <!-- [ Main Content ] end -->
+
+    <!-- Warning Section Starts -->
+    <!-- Older IE warning message -->
+    <!--[if lt IE 11]>
+        <div class="ie-warning">
+            <h1>Warning!!</h1>
+            <p>You are using an outdated version of Internet Explorer, please upgrade
+               <br/>to any of the following web browsers to access this website.
+            </p>
+            <div class="iew-container">
+                <ul class="iew-download">
+                    <li>
+                        <a href="http://www.google.com/chrome/">
+                            <img src="assets2/images/browser/chrome.png" alt="Chrome">
+                            <div>Chrome</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.mozilla.org/en-US/firefox/new/">
+                            <img src="assets2/images/browser/firefox.png" alt="Firefox">
+                            <div>Firefox</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://www.opera.com">
+                            <img src="assets2/images/browser/opera.png" alt="Opera">
+                            <div>Opera</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.apple.com/safari/">
+                            <img src="assets2/images/browser/safari.png" alt="Safari">
+                            <div>Safari</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://windows.microsoft.com/en-us/internet-explorer/download-ie">
+                            <img src="assets2/images/browser/ie.png" alt="">
+                            <div>IE (11 & above)</div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <p>Sorry for the inconvenience!</p>
+        </div>
+    <![endif]-->
+    <!-- Warning Section Ends -->
+
+    <!-- Required Js -->
+<script src="{% static 'assets2/js/vendor-all.min.js' %}"></script>
+	<script src="{% static 'assets2/plugins/bootstrap/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'assets2/js/pcoded.min.js' %}"></script>
+   
+    <script src="{% static 'assets2/plugins/amchart/js/amcharts.js' %}"></script>
+    <script src="{% static 'assets2/plugins/amchart/js/gauge.js' %}"></script>
+    <script src="{% static 'assets2/plugins/amchart/js/serial.js' %}"></script>
+    <script src="{% static 'assets2/plugins/amchart/js/light.js' %}"></script>
+    <script src="{% static 'assets2/plugins/amchart/js/pie.min.js' %}"></script>
+    <script src="{% static 'assets2/plugins/amchart/js/ammap.min.js' %}"></script>
+    <script src="{% static 'assets2/plugins/amchart/js/usaLow.js' %}"></script>
+    <script src="{% static 'assets2/plugins/amchart/js/radar.js' %}"></script>
+    <script src="{% static 'assets2/plugins/amchart/js/worldLow.js' %}"></script>
+    <script src="{% static 'assets/js/rocket-loader.min.js' %}" data-cf-settings="48b6984239b6c6478e15978b-|49" defer></script></body>
+    <script src="{% static 'assets/js/pages/dashboard-ecommerce.js' %}" type="48b6984239b6c6478e15978b-text/javascript"></script>
+
+
+    <script type="text/javascript">
+        var iconlist = ['icon-alert-octagon', 'icon-alert-circle', 'icon-activity', 'icon-alert-triangle', 'icon-align-center', 'icon-airplay', 'icon-align-justify', 'icon-align-left', 'icon-align-right', 'icon-arrow-down-left',
+            'icon-arrow-down-right', 'icon-anchor', 'icon-aperture', 'icon-arrow-left', 'icon-arrow-right', 'icon-arrow-down', 'icon-arrow-up-left', 'icon-arrow-up-right', 'icon-arrow-up', 'icon-award', 'icon-bar-chart', 'icon-at-sign',
+            'icon-bar-chart-2', 'icon-battery-charging', 'icon-bell-off', 'icon-battery', 'icon-bluetooth', 'icon-bell', 'icon-book', 'icon-briefcase', 'icon-camera-off', 'icon-calendar', 'icon-bookmark', 'icon-box', 'icon-camera',
+            'icon-check-circle', 'icon-check', 'icon-check-square', 'icon-cast', 'icon-chevron-down', 'icon-chevron-left', 'icon-chevron-right', 'icon-chevron-up', 'icon-chevrons-down', 'icon-chevrons-right', 'icon-chevrons-up',
+            'icon-chevrons-left', 'icon-circle', 'icon-clipboard', 'icon-chrome', 'icon-clock', 'icon-cloud-lightning', 'icon-cloud-drizzle', 'icon-cloud-rain', 'icon-cloud-off', 'icon-codepen', 'icon-cloud-snow', 'icon-compass', 'icon-copy',
+            'icon-corner-down-right', 'icon-corner-down-left', 'icon-corner-left-down', 'icon-corner-left-up', 'icon-corner-up-left', 'icon-corner-up-right', 'icon-corner-right-down', 'icon-corner-right-up', 'icon-cpu', 'icon-credit-card',
+            'icon-crosshair', 'icon-disc', 'icon-delete', 'icon-download-cloud', 'icon-download', 'icon-droplet', 'icon-edit-2', 'icon-edit', 'icon-edit-1', 'icon-external-link', 'icon-eye', 'icon-feather', 'icon-facebook', 'icon-file-minus',
+            'icon-eye-off', 'icon-fast-forward', 'icon-file-text', 'icon-film', 'icon-file', 'icon-file-plus', 'icon-folder', 'icon-filter', 'icon-flag', 'icon-globe', 'icon-grid', 'icon-heart', 'icon-home', 'icon-github', 'icon-image',
+            'icon-inbox', 'icon-layers', 'icon-info', 'icon-instagram', 'icon-layout', 'icon-link-2', 'icon-life-buoy', 'icon-link', 'icon-log-in', 'icon-list', 'icon-lock', 'icon-log-out', 'icon-loader', 'icon-mail', 'icon-maximize-2',
+            'icon-map', 'icon-map-pin', 'icon-menu', 'icon-message-circle', 'icon-message-square', 'icon-minimize-2', 'icon-mic-off', 'icon-minus-circle', 'icon-mic', 'icon-minus-square', 'icon-minus', 'icon-moon', 'icon-monitor',
+            'icon-more-vertical', 'icon-more-horizontal', 'icon-move', 'icon-music', 'icon-navigation-2', 'icon-navigation', 'icon-octagon', 'icon-package', 'icon-pause-circle', 'icon-pause', 'icon-percent', 'icon-phone-call',
+            'icon-phone-forwarded', 'icon-phone-missed', 'icon-phone-off', 'icon-phone-incoming', 'icon-phone', 'icon-phone-outgoing', 'icon-pie-chart', 'icon-play-circle', 'icon-play', 'icon-plus-square', 'icon-plus-circle', 'icon-plus',
+            'icon-pocket', 'icon-printer', 'icon-power', 'icon-radio', 'icon-repeat', 'icon-refresh-ccw', 'icon-rewind', 'icon-rotate-ccw', 'icon-refresh-cw', 'icon-rotate-cw', 'icon-save', 'icon-search', 'icon-server', 'icon-scissors',
+            'icon-share-2', 'icon-share', 'icon-shield', 'icon-settings', 'icon-skip-back', 'icon-shuffle', 'icon-sidebar', 'icon-skip-forward', 'icon-slack', 'icon-slash', 'icon-smartphone', 'icon-square', 'icon-speaker', 'icon-star',
+            'icon-stop-circle', 'icon-sun', 'icon-sunrise', 'icon-tablet', 'icon-tag', 'icon-sunset', 'icon-target', 'icon-thermometer', 'icon-thumbs-up', 'icon-thumbs-down', 'icon-toggle-left', 'icon-toggle-right', 'icon-trash-2', 'icon-trash',
+            'icon-trending-up', 'icon-trending-down', 'icon-triangle', 'icon-type', 'icon-twitter', 'icon-upload', 'icon-umbrella', 'icon-upload-cloud', 'icon-unlock', 'icon-user-check', 'icon-user-minus', 'icon-user-plus', 'icon-user-x',
+            'icon-user', 'icon-users', 'icon-video-off', 'icon-video', 'icon-voicemail', 'icon-volume-x', 'icon-volume-2', 'icon-volume-1', 'icon-volume', 'icon-watch', 'icon-wifi', 'icon-x-square', 'icon-wind', 'icon-x', 'icon-x-circle',
+            'icon-zap', 'icon-zoom-in', 'icon-zoom-out', 'icon-command', 'icon-cloud', 'icon-hash', 'icon-headphones', 'icon-underline', 'icon-italic', 'icon-bold', 'icon-crop', 'icon-help-circle', 'icon-paperclip', 'icon-shopping-cart',
+            'icon-tv', 'icon-wifi-off', 'icon-minimize', 'icon-maximize', 'icon-gitlab', 'icon-sliders', 'icon-star-on', 'icon-heart-on'
+        ];
+
+        for (var i = 0, l = iconlist.length; i < l; i++) {
+            $('#icon-wrapper').append(
+                '<div class="i-block" data-clipboard-text="feather ' + iconlist[i] + '" data-filter="' + iconlist[i] + '"  data-toggle="tooltip" title="' + iconlist[i] + '">' +
+                '<i class="feather ' + iconlist[i] + '"></i>' +
+                '</div>');
+        }
+        $(window).on('load', function() {
+            $("#icon-search").on("keyup", function() {
+                var g = $(this).val().toLowerCase();
+                $(".i-main .i-block").each(function() {
+                    var t = $(this).attr('data-filter');
+                    if (t) {
+                        var s = t.toLowerCase();
+                    }
+                    if (s) {
+                        var n = s.indexOf(g);
+                        if (n !== -1) {
+                            $(this).show();
+                        } else {
+                            $(this).hide();
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>
